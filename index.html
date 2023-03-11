@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+    .shapka {
+      width: 1440px;
+      height: 80px;
+    }
+
+
+    #logo {
+      position: relative;
+      left: 30px;
+      right: 1192px;
+      top: 18px;
+      bottom: 17px;
+    }
+
+    button {
+      position: relative;
+      font-family: "Courier New", Courier, monospace;
+      height: 42px;
+      width: 117px;
+      left: 1203px;
+      right: 120px;
+      top: -50px;
+      bottom: 19px;
+      background: #ffffff;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      display: block;
+    }
+
+    button:hover {
+      color: rgba(250, 248, 240, 1);
+      background-color: rgba(224, 134, 49, 1);
+      text-decoration: underline;
+    }
+
+    #logotype {
+      position: relative;
+      width: 256px;
+      height: 90px;
+      left: 592px;
+      right: 592px;
+      top: 170px;
+      bottom: 462px;
+    }
+
+    #word {
+      position: absolute;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 53px;
+      letter-spacing: 0em;
+      text-align: center;
+      /* background: rgba(255, 255, 255, 1); */
+      left: 133px;
+      right: 133px;
+      top: 372px;
+      bottom: 322px;
+      color: #ffffff;
+    }
+
+    #norway {
+      position: absolute;
+      width: 291px;
+      height: 20px;
+      left: calc(50% - 291px / 2 + 0.5px);
+      top: 0px;
+      font-family: "Courier New", Courier, monospace;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height, or 143% */
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ffffff;
+      left: 575px;
+      right: 574px;
+      top: 512px;
+      bottom: 322px;
+    }
+
+    #the {
+      width: 360px;
+      height: 180px;
+      position: absolute;
+      left: 0%;
+      right: 53.12%;
+      top: 1px;
+      font-family: "Courier New", Courier, monospace;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+      left: 336px;
+      right: 744px;
+      top: 951px;
+      bottom: 89px;
+    }
+
+    #below {
+      width: 343px;
+      height: 80px;
+      position: absolute;
+      left: 0%;
+      right: 53.12%;
+      top: 1px;
+      font-family: "Courier New", Courier, monospace;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+      left: 736px;
+      right: 361px;
+      top: 951px;
+      bottom: 189px;
+    }
+
+    .line {
+      position: absolute;
+      height: 8px;
+      width: 42px;
+      left: 699px;
+      right: 699px;
+      top: 910px;
+      bottom: 302px;
+    }
+
+    #guesthouse {
+      position: absolute;
+      width: 1287px;
+      height: 288px;
+      left: calc(50% - 1287px / 2 - 0.5px);
+      top: 140px;
+      font-family: "Courier New", Courier, monospace;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 96px;
+      text-align: center;
+      color: #52503b;
+      left: 76px;
+      right: 77px;
+      top: 1340px;
+      bottom: 140px;
+    }
+
+    p::first-letter {
+      color: rgba(224, 134, 49, 1);
+    }
+
+    #sleep {
+      position: absolute;
+      width: 395px;
+      height: 36px;
+      left: calc(50% - 395px / 2 + 0.5px);
+      top: 38px;
+      font-family: "Courier New", Courier, monospace;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+      color: #52503b;
+      left: 523px;
+      right: 522px;
+      top: 2526px;
+      bottom: 356px;
+    }
+
+    #lorem {
+      position: absolute;
+      width: 554px;
+      height: 72px;
+      left: calc(50% - 554px / 2);
+      top: 2px;
+      font-family: "Courier New", Courier, monospace;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #52503b;
+      left: 443px;
+      right: 443px;
+      top: 2610px;
+      bottom: 270px;
+    }
+
+    .q {
+      position: absolute;
+      height: 64px;
+      width: 45.333335876464844px;
+      left: 286px;
+      right: 1108px;
+      top: 2700px;
+      bottom: 176px;
+    }
+
+    .w {
+      position: absolute;
+      height: 64px;
+      width: 45.333335876464844px;
+      left: 700px;
+      right: 700px;
+      top: 2700px;
+      bottom: 176px;
+    }
+
+    .e {
+      position: absolute;
+      height: 64px;
+      width: 58px;
+      left: 1099px;
+      right: 277px;
+      top: 2700px;
+      bottom: 176px;
+    }
+
+    #widget {
+      position: relative;
+      font-family: 'Courier New', Courier, monospace;
+      height: 20px;
+      width: 180px;
+      left: 150px;
+      right: 700px;
+      top: 40px;
+      bottom: 200px;
+    }
+
+    #widget-list {
+      padding: 0;
+      list-style: none;
+    }
+
+    #widget-list a {
+      text-decoration: none;
+      outline: none;
+      display: block;
+      padding: 6px 0;
+      letter-spacing: 1px;
+      font-weight: 300;
+      color: #FFFFFF;
+      ;
+      transition: .3s linear;
+    }
+
+    #widget-list a:hover {
+      color: rgba(224, 134, 49, 1);
+    }
+
+    .menu-item {
+      text-decoration: none;
+      color: rgb(255, 255, 255, 1);
+      margin-right: 35px;
+      font-family: "Courier New", Courier, monospace;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 20px;
+      padding: 30px;
+    }
+
+    .menu-item:hover {
+      text-decoration-line: underline;
+    }
+
+    .qqqq {
+      /*меняет расположение текста внутри голубого фона */
+      /* background: aqua; */
+      position: relative;
+      left: 500px;
+      right: 500px;
+      bottom: 20px;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .inc {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="shapka" style="background-color: #52503b">
+      <img id="logo" src="логотип.png" alt="logo" />
+      <nav class="qqqq">
+        <a class="menu-item" href="">Start</a>
+        <a class="menu-item" href="">Contact</a>
+        <a class="menu-item" href="">Our history</a>
+      </nav>
+      <button>Book now</button>
+    </div>
+    <div style="background-image: url('дом.jpg'); height: 800px; width: 1440px">
+      <img id="logotype" src="logotype.png" alt="logo" />
+      <span id="word">Experience the perfect combination of modern housing & natural
+        scenery.</span>
+      <span id="norway">Located in Lofoten, norway</span>
+    </div>
+  </header>
+  <div style="background-image: url('милк.png'); height: 410px; width: 1440px">
+    <div id="the">
+      The Guest House is the perfect weekend get-away housing. Located in the
+      Norwegian archipelago, Lofoten, it's a great escape from the hustle and
+      bustle of the city. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat
+      eros quis consectetur. Morbi neque ex, condimentum dapibus congue et,
+      vulputate ut ligula.
+    </div>
+    <div id="below">
+      Below you'll find information about the accommodation and what's
+      included in the price. Don't hesitate to reach out to us vi the contact
+      page if you have any questions around your stay.
+    </div>
+    <img class="line" src="linee.png" alt="errt" />
+  </div>
+  <div style="background-image: url('Rectangle.png');
+      width: 1440px;
+      height: 568px;">
+    <p id="guesthouse">
+      The Guest House is the perfect weekend getaway cabin.
+    </p>
+  </div>
+  <div style="background-image: url('IMAGE.png'); width: 1440px; height: 568px"></div>
+  <div style="background-color: #faf8f0; width: 1440px; height: 530px">
+    <div id="sleep">Sleeping arrangements.</div>
+    <div id="lorem">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+      scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis
+      consectetur.
+    </div>
+    <img class="q" src="Shape.png" alt="beds" />
+    <img class="w" src="Combined-Shape.png" alt="bedrooms" />
+    <img class="e" src="dush.png" alt="bathrooms" />
+  </div>
+  <div style="background-image: url('dfffw.png'); width: 1440px; height: 568px"></div>
+  <div class="inc" style="background-color: bisque; width: 1440px; height: 500px">
+    <div> <img scr="1.png" alt="icon">
+      <img scr="2.png" alt="icon">
+      <img scr="3.png" alt="icon">
+      <img scr="4.png" alt="icon">
+      <img scr="5.png" alt="icon">
+      <img scr="6.png" alt="icon">
+      <img scr="7.png" alt="icon">
+      <img scr="8.png" alt="icon">
+    </div>
+  </div>
+  <footer>
+    <div>
+      <div style="background-image: url('errtyui.png');width: 1440px;height: 608px;">
+        <nav id="widget">
+          <nav id="widget-list">
+            <a href="">PAGES</a>
+            <a href="">Start</a>
+            <a href="">Contact</a>
+            <a href="">Our history</a>
+            <a href="">Licenses</a>
+            <a href="">Instructions</a>
+            <a href="">Style guide</a>
+          </nav>
+        </nav>
+      </div>
+      <div class="flex-container">
+        <div style="background-image: url('123456789.png'); width: 200px; height: 70px;"></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
